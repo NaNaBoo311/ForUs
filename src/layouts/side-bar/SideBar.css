@@ -1,0 +1,161 @@
+.sidebar {
+  height: 100vh;
+  background: linear-gradient(180deg, #2c2c2c, #1c1c1c);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: visible;
+  transition: width 0.3s ease;
+}
+
+.sidebar--open {
+  width: 250px;
+}
+
+.sidebar--closed {
+  width: 60px;
+}
+
+.sidebar__inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar--closed .sidebar__inner {
+  padding: 20px 10px;
+}
+
+.sidebar__profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar__avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.sidebar__avatar--small {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.sidebar__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__role {
+  font-size: 10px;
+  color: #aaa;
+  margin: 0;
+}
+
+.sidebar__name {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.sidebar__section {
+  margin-bottom: 30px;
+}
+
+.sidebar__section-title {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.sidebar__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar__item {
+  padding: 10px 0;
+}
+
+.sidebar__item a,
+.sidebar__subitem a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__item:hover,
+.sidebar__subitem:hover {
+  opacity: 0.8;
+}
+
+.sidebar__icon {
+  margin-right: 10px;
+}
+
+.sidebar__subitem {
+  padding: 5px 0 5px 20px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.sidebar__add {
+  float: right;
+  cursor: pointer;
+}
+
+.sidebar__cta {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sidebar__cta-title {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.sidebar__cta-text {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.sidebar__cta-button {
+  background: #ba9359;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sidebar__toggle {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  background: #ba9359;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
